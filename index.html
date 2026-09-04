@@ -1,0 +1,3069 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Dashboard automotivo premium para gerenciamento de operações, veículos, vendas e performance."
+    >
+
+    <title>Porsche Performance | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <a href="#" class="brand">
+
+                    <div class="brand-symbol">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+
+                    <div class="brand-content">
+
+                        <span class="brand-name">
+                            PORSCHE
+                        </span>
+
+                        <span class="brand-subtitle">
+                            PERFORMANCE CENTER
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav class="sidebar-nav">
+
+                <div class="nav-group">
+
+                    <span class="nav-group-title">
+                        VISÃO GERAL
+                    </span>
+
+                    <a
+                        href="#"
+                        class="nav-item active"
+                        data-section="dashboard"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+
+                        <span class="nav-indicator"></span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="analytics"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Performance
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-title">
+                        OPERAÇÕES
+                    </span>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="vehicles"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Veículos
+                        </span>
+
+                        <span class="nav-badge">
+                            42
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="inventory"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Estoque
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="orders"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Pedidos
+                        </span>
+
+                        <span class="nav-badge notification">
+                            8
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="service"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Pós-venda
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-title">
+                        COMERCIAL
+                    </span>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="sales"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Vendas
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="customers"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Clientes
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="leads"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Leads
+                        </span>
+
+                        <span class="nav-badge">
+                            126
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-title">
+                        INTELIGÊNCIA
+                    </span>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="reports"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-file-chart-column"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Relatórios
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-section="insights"
+                    >
+
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </span>
+
+                        <span class="nav-text">
+                            Insights
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- FOOTER DA SIDEBAR -->
+
+            <div class="sidebar-footer">
+
+                <div class="system-status">
+
+                    <div class="status-indicator"></div>
+
+                    <div class="status-content">
+
+                        <span class="status-title">
+                            Sistema Operacional
+                        </span>
+
+                        <span class="status-value">
+                            Todos os sistemas ativos
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <a
+                    href="#"
+                    class="nav-item settings-item"
+                    data-section="settings"
+                >
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configurações
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================================
+             CONTEÚDO PRINCIPAL
+        ====================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="menu-toggle"
+                        id="menuToggle"
+                        aria-label="Abrir menu"
+                    >
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div class="breadcrumb">
+
+                        <span>
+                            Porsche Center
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                        <strong>
+                            Dashboard Executivo
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+
+                    <!-- PESQUISA -->
+
+                    <div class="search-container">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="search"
+                            id="globalSearch"
+                            placeholder="Buscar veículos, clientes ou pedidos..."
+                        >
+
+                        <kbd>
+                            CTRL K
+                        </kbd>
+
+                    </div>
+
+
+                    <!-- PERÍODO -->
+
+                    <button
+                        class="date-selector"
+                        id="dateSelector"
+                    >
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <span>
+                            Setembro 2026
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+
+                    <!-- NOTIFICAÇÕES -->
+
+                    <button
+                        class="icon-button notification-button"
+                        id="notificationButton"
+                        aria-label="Notificações"
+                    >
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <!-- PERFIL -->
+
+                    <button
+                        class="profile-button"
+                        id="profileButton"
+                    >
+
+                        <div class="profile-avatar">
+                            LP
+                        </div>
+
+                        <div class="profile-info">
+
+                            <strong>
+                                Lucas Padroni
+                            </strong>
+
+                            <span>
+                                Administrador
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTAINER PRINCIPAL
+            ================================================== -->
+
+            <div class="content-container">
+
+
+                <!-- =============================================
+                     PAGE HEADER
+                ============================================== -->
+
+                <section class="page-header">
+
+                    <div class="page-header-content">
+
+                        <span class="eyebrow">
+
+                            <span class="live-indicator"></span>
+
+                            CENTRO DE CONTROLE
+
+                        </span>
+
+                        <h1>
+                            Performance em movimento.
+                        </h1>
+
+                        <p>
+                            Acompanhe os principais indicadores da operação,
+                            performance comercial, estoque e atividade dos
+                            veículos em uma única central de gerenciamento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-header-actions">
+
+                        <button
+                            class="button button-secondary"
+                            id="exportDashboard"
+                        >
+
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                            Exportar
+
+                        </button>
+
+                        <button
+                            class="button button-primary"
+                            id="newVehicleButton"
+                        >
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            Novo Veículo
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =============================================
+                     KPI GRID
+                ============================================== -->
+
+                <section class="metrics-grid">
+
+
+                    <!-- RECEITA -->
+
+                    <article class="metric-card metric-featured">
+
+                        <div class="metric-card-header">
+
+                            <span class="metric-label">
+                                Receita Total
+                            </span>
+
+                            <button class="metric-menu">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="metric-value">
+                            R$ 18,4M
+                        </div>
+
+
+                        <div class="metric-footer">
+
+                            <span class="metric-growth positive">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                12,8%
+
+                            </span>
+
+                            <span>
+                                comparado ao período anterior
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-chart mini-chart revenue-chart">
+
+                            <span style="height: 32%;"></span>
+                            <span style="height: 48%;"></span>
+                            <span style="height: 42%;"></span>
+                            <span style="height: 66%;"></span>
+                            <span style="height: 58%;"></span>
+                            <span style="height: 82%;"></span>
+                            <span style="height: 72%;"></span>
+                            <span style="height: 100%;"></span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VENDAS -->
+
+                    <article class="metric-card">
+
+                        <div class="metric-card-header">
+
+                            <span class="metric-label">
+                                Veículos Vendidos
+                            </span>
+
+                            <span class="metric-icon">
+
+                                <i class="fa-solid fa-car"></i>
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-value">
+                            184
+                        </div>
+
+
+                        <div class="metric-footer">
+
+                            <span class="metric-growth positive">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                8,4%
+
+                            </span>
+
+                            <span>
+                                este mês
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-progress">
+
+                            <div
+                                class="metric-progress-bar"
+                                style="width: 78%;"
+                            ></div>
+
+                        </div>
+
+
+                        <span class="metric-progress-text">
+                            78% da meta mensal
+                        </span>
+
+                    </article>
+
+
+                    <!-- TICKET MÉDIO -->
+
+                    <article class="metric-card">
+
+                        <div class="metric-card-header">
+
+                            <span class="metric-label">
+                                Ticket Médio
+                            </span>
+
+                            <span class="metric-icon">
+
+                                <i class="fa-solid fa-coins"></i>
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-value">
+                            R$ 624K
+                        </div>
+
+
+                        <div class="metric-footer">
+
+                            <span class="metric-growth positive">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                4,2%
+
+                            </span>
+
+                            <span>
+                                por venda
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-comparison">
+
+                            <span>
+                                Meta: R$ 600K
+                            </span>
+
+                            <strong>
+                                + R$ 24K
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONVERSÃO -->
+
+                    <article class="metric-card">
+
+                        <div class="metric-card-header">
+
+                            <span class="metric-label">
+                                Conversão Comercial
+                            </span>
+
+                            <span class="metric-icon">
+
+                                <i class="fa-solid fa-bullseye"></i>
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="metric-value">
+                            24,6%
+                        </div>
+
+
+                        <div class="metric-footer">
+
+                            <span class="metric-growth negative">
+
+                                <i class="fa-solid fa-arrow-trend-down"></i>
+
+                                1,3%
+
+                            </span>
+
+                            <span>
+                                comparado ao mês anterior
+                            </span>
+
+                        </div>
+
+
+                        <div class="circular-progress">
+
+                            <span>
+                                24%
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     RECEITA E META
+                ============================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- RECEITA -->
+
+                    <article class="dashboard-card revenue-overview">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    VISÃO FINANCEIRA
+                                </span>
+
+                                <h2>
+                                    Receita e Performance
+                                </h2>
+
+                            </div>
+
+
+                            <div class="card-actions">
+
+                                <button class="chart-filter active">
+                                    Receita
+                                </button>
+
+                                <button class="chart-filter">
+                                    Vendas
+                                </button>
+
+                                <button class="chart-filter">
+                                    Lucro
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="chart-summary">
+
+                            <div>
+
+                                <span>
+                                    Receita acumulada
+                                </span>
+
+                                <strong>
+                                    R$ 142.860.000
+                                </strong>
+
+                            </div>
+
+
+                            <div class="chart-summary-growth">
+
+                                <span class="positive">
+
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                    18,7%
+
+                                </span>
+
+                                <small>
+                                    crescimento anual
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ÁREA DO GRÁFICO -->
+
+                        <div class="main-chart">
+
+                            <div class="chart-grid-lines">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="chart-labels-y">
+
+                                <span>R$ 25M</span>
+                                <span>R$ 20M</span>
+                                <span>R$ 15M</span>
+                                <span>R$ 10M</span>
+                                <span>R$ 5M</span>
+
+                            </div>
+
+
+                            <div class="chart-visual">
+
+                                <div class="chart-area"></div>
+
+                                <svg
+                                    viewBox="0 0 1000 300"
+                                    preserveAspectRatio="none"
+                                    class="revenue-svg"
+                                >
+
+                                    <path
+                                        class="chart-line"
+                                        d="
+                                            M0,250
+                                            C80,220 100,210 160,200
+                                            S240,150 300,180
+                                            S380,120 440,140
+                                            S520,90 580,115
+                                            S660,70 720,95
+                                            S800,45 860,65
+                                            S930,20 1000,35
+                                        "
+                                    />
+
+                                </svg>
+
+                            </div>
+
+
+                            <div class="chart-labels-x">
+
+                                <span>Jan</span>
+                                <span>Fev</span>
+                                <span>Mar</span>
+                                <span>Abr</span>
+                                <span>Mai</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Ago</span>
+                                <span>Set</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="chart-footer">
+
+                            <div class="legend">
+
+                                <span class="legend-item">
+
+                                    <span class="legend-color revenue"></span>
+
+                                    Receita Real
+
+                                </span>
+
+
+                                <span class="legend-item">
+
+                                    <span class="legend-color target"></span>
+
+                                    Meta Projetada
+
+                                </span>
+
+                            </div>
+
+
+                            <button class="text-button">
+
+                                Ver relatório completo
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- META -->
+
+                    <article class="dashboard-card goal-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    META MENSAL
+                                </span>
+
+                                <h2>
+                                    Progresso Comercial
+                                </h2>
+
+                            </div>
+
+
+                            <button class="metric-menu">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="goal-visual">
+
+                            <div class="goal-circle">
+
+                                <div class="goal-circle-inner">
+
+                                    <strong>
+                                        78%
+                                    </strong>
+
+                                    <span>
+                                        concluído
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-details">
+
+                            <div class="goal-detail">
+
+                                <span>
+                                    Meta
+                                </span>
+
+                                <strong>
+                                    235 veículos
+                                </strong>
+
+                            </div>
+
+
+                            <div class="goal-detail">
+
+                                <span>
+                                    Realizado
+                                </span>
+
+                                <strong>
+                                    184 veículos
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-message">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            <p>
+                                Faltam <strong>51 veículos</strong> para atingir
+                                a meta mensal.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     VISÃO OPERACIONAL
+                ============================================== -->
+
+                <section class="section-header">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            OPERAÇÃO
+                        </span>
+
+                        <h2>
+                            Visão operacional
+                        </h2>
+
+                    </div>
+
+
+                    <button class="view-all-button">
+
+                        Ver todos os indicadores
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </section>
+
+
+                <section class="operations-grid">
+
+
+                    <!-- ESTOQUE -->
+
+                    <article class="operation-card">
+
+                        <div class="operation-header">
+
+                            <div class="operation-icon">
+
+                                <i class="fa-solid fa-warehouse"></i>
+
+                            </div>
+
+
+                            <span class="operation-status stable">
+                                Estável
+                            </span>
+
+                        </div>
+
+
+                        <div class="operation-content">
+
+                            <span>
+                                Estoque disponível
+                            </span>
+
+                            <strong>
+                                42
+                            </strong>
+
+                            <small>
+                                veículos prontos para negociação
+                            </small>
+
+                        </div>
+
+
+                        <div class="operation-footer">
+
+                            <div class="inventory-bar">
+
+                                <span style="width: 76%;"></span>
+
+                            </div>
+
+                            <span>
+                                76% da capacidade
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PEDIDOS -->
+
+                    <article class="operation-card">
+
+                        <div class="operation-header">
+
+                            <div class="operation-icon">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
+
+
+                            <span class="operation-status attention">
+                                Atenção
+                            </span>
+
+                        </div>
+
+
+                        <div class="operation-content">
+
+                            <span>
+                                Pedidos em processamento
+                            </span>
+
+                            <strong>
+                                18
+                            </strong>
+
+                            <small>
+                                5 aguardando confirmação
+                            </small>
+
+                        </div>
+
+
+                        <div class="operation-footer">
+
+                            <button class="operation-link">
+
+                                Gerenciar pedidos
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ENTREGAS -->
+
+                    <article class="operation-card">
+
+                        <div class="operation-header">
+
+                            <div class="operation-icon">
+
+                                <i class="fa-solid fa-truck-fast"></i>
+
+                            </div>
+
+
+                            <span class="operation-status positive">
+                                Excelente
+                            </span>
+
+                        </div>
+
+
+                        <div class="operation-content">
+
+                            <span>
+                                Entregas concluídas
+                            </span>
+
+                            <strong>
+                                96,8%
+                            </strong>
+
+                            <small>
+                                dentro do prazo previsto
+                            </small>
+
+                        </div>
+
+
+                        <div class="operation-footer">
+
+                            <div class="operation-mini-stats">
+
+                                <span>
+                                    62 concluídas
+                                </span>
+
+                                <strong>
+                                    +8,2%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PÓS-VENDA -->
+
+                    <article class="operation-card">
+
+                        <div class="operation-header">
+
+                            <div class="operation-icon">
+
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                            </div>
+
+
+                            <span class="operation-status stable">
+                                Normal
+                            </span>
+
+                        </div>
+
+
+                        <div class="operation-content">
+
+                            <span>
+                                Serviços ativos
+                            </span>
+
+                            <strong>
+                                87
+                            </strong>
+
+                            <small>
+                                atendimentos em andamento
+                            </small>
+
+                        </div>
+
+
+                        <div class="operation-footer">
+
+                            <button class="operation-link">
+
+                                Ver serviços
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     VEÍCULOS E ATIVIDADES
+                ============================================== -->
+
+                <section class="content-grid">
+
+
+                    <!-- TABELA DE VEÍCULOS -->
+
+                    <article class="dashboard-card vehicles-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    ESTOQUE
+                                </span>
+
+                                <h2>
+                                    Veículos em destaque
+                                </h2>
+
+                            </div>
+
+
+                            <button class="text-button">
+
+                                Ver inventário
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="table-wrapper">
+
+                            <table class="vehicles-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Veículo</th>
+                                        <th>Categoria</th>
+                                        <th>Status</th>
+                                        <th>Preço</th>
+                                        <th>Ação</th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="vehicle-info">
+
+                                                <div class="vehicle-image">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        911 Carrera GTS
+                                                    </strong>
+
+                                                    <span>
+                                                        2026 · Automático
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>Esportivo</td>
+
+                                        <td>
+
+                                            <span class="status-badge available">
+                                                Disponível
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <strong>
+                                                R$ 1.180.000
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="table-action">
+
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="vehicle-info">
+
+                                                <div class="vehicle-image">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        Taycan Turbo S
+                                                    </strong>
+
+                                                    <span>
+                                                        2026 · Elétrico
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>Elétrico</td>
+
+                                        <td>
+
+                                            <span class="status-badge reserved">
+                                                Reservado
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <strong>
+                                                R$ 1.420.000
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="table-action">
+
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="vehicle-info">
+
+                                                <div class="vehicle-image">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        Cayenne Turbo GT
+                                                    </strong>
+
+                                                    <span>
+                                                        2026 · SUV
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>SUV</td>
+
+                                        <td>
+
+                                            <span class="status-badge available">
+                                                Disponível
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <strong>
+                                                R$ 1.090.000
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="table-action">
+
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="vehicle-info">
+
+                                                <div class="vehicle-image">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        Macan GTS
+                                                    </strong>
+
+                                                    <span>
+                                                        2026 · SUV
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>Performance</td>
+
+                                        <td>
+
+                                            <span class="status-badge incoming">
+                                                Em trânsito
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <strong>
+                                                R$ 790.000
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="table-action">
+
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="vehicle-info">
+
+                                                <div class="vehicle-image">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </div>
+
+
+                                                <div>
+
+                                                    <strong>
+                                                        Panamera 4 E-Hybrid
+                                                    </strong>
+
+                                                    <span>
+                                                        2026 · Híbrido
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+
+                                        <td>Executivo</td>
+
+                                        <td>
+
+                                            <span class="status-badge sold">
+                                                Vendido
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <strong>
+                                                R$ 980.000
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+
+                                            <button class="table-action">
+
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                            </button>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ATIVIDADE RECENTE -->
+
+                    <article class="dashboard-card activity-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    MONITORAMENTO
+                                </span>
+
+                                <h2>
+                                    Atividade recente
+                                </h2>
+
+                            </div>
+
+
+                            <button class="metric-menu">
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="activity-list">
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon sale">
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Nova venda concluída
+                                    </strong>
+
+                                    <span>
+                                        911 Carrera GTS · R$ 1.180.000
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    09:42
+                                </time>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon customer">
+
+                                    <i class="fa-solid fa-user-plus"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Novo cliente registrado
+                                    </strong>
+
+                                    <span>
+                                        Perfil comercial atualizado
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    10:18
+                                </time>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon inventory">
+
+                                    <i class="fa-solid fa-warehouse"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Estoque atualizado
+                                    </strong>
+
+                                    <span>
+                                        Taycan Turbo S adicionado
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    11:06
+                                </time>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon service">
+
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Serviço finalizado
+                                    </strong>
+
+                                    <span>
+                                        Revisão completa · Cayenne
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    12:35
+                                </time>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon alert">
+
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Pedido requer atenção
+                                    </strong>
+
+                                    <span>
+                                        Confirmação pendente
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    13:20
+                                </time>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon report">
+
+                                    <i class="fa-solid fa-file-chart-column"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Relatório atualizado
+                                    </strong>
+
+                                    <span>
+                                        Performance mensal disponível
+                                    </span>
+
+                                </div>
+
+
+                                <time>
+                                    14:02
+                                </time>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="activity-button">
+
+                            Visualizar todas as atividades
+
+                        </button>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     PERFORMANCE POR CATEGORIA
+                ============================================== -->
+
+                <section class="section-header">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            COMERCIAL
+                        </span>
+
+                        <h2>
+                            Performance por categoria
+                        </h2>
+
+                    </div>
+
+
+                    <div class="section-period">
+
+                        <button class="period-button active">
+                            Mensal
+                        </button>
+
+                        <button class="period-button">
+                            Trimestral
+                        </button>
+
+                        <button class="period-button">
+                            Anual
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <section class="performance-grid">
+
+
+                    <!-- 911 -->
+
+                    <article class="performance-card">
+
+                        <div class="performance-card-top">
+
+                            <span class="performance-rank">
+                                01
+                            </span>
+
+
+                            <span class="performance-trend positive">
+
+                                <i class="fa-solid fa-arrow-up"></i>
+
+                                14,2%
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="performance-icon">
+
+                            <i class="fa-solid fa-car-side"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Porsche 911
+                        </h3>
+
+
+                        <p>
+                            Linha esportiva
+                        </p>
+
+
+                        <strong class="performance-value">
+                            48 vendas
+                        </strong>
+
+
+                        <div class="performance-bar">
+
+                            <span style="width: 92%;"></span>
+
+                        </div>
+
+
+                        <span class="performance-footer">
+                            Melhor performance do período
+                        </span>
+
+                    </article>
+
+
+                    <!-- TAYCAN -->
+
+                    <article class="performance-card">
+
+                        <div class="performance-card-top">
+
+                            <span class="performance-rank">
+                                02
+                            </span>
+
+
+                            <span class="performance-trend positive">
+
+                                <i class="fa-solid fa-arrow-up"></i>
+
+                                10,8%
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="performance-icon">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Porsche Taycan
+                        </h3>
+
+
+                        <p>
+                            Mobilidade elétrica
+                        </p>
+
+
+                        <strong class="performance-value">
+                            41 vendas
+                        </strong>
+
+
+                        <div class="performance-bar">
+
+                            <span style="width: 81%;"></span>
+
+                        </div>
+
+
+                        <span class="performance-footer">
+                            Crescimento consistente
+                        </span>
+
+                    </article>
+
+
+                    <!-- CAYENNE -->
+
+                    <article class="performance-card">
+
+                        <div class="performance-card-top">
+
+                            <span class="performance-rank">
+                                03
+                            </span>
+
+
+                            <span class="performance-trend positive">
+
+                                <i class="fa-solid fa-arrow-up"></i>
+
+                                6,4%
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="performance-icon">
+
+                            <i class="fa-solid fa-mountain"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Porsche Cayenne
+                        </h3>
+
+
+                        <p>
+                            SUV premium
+                        </p>
+
+
+                        <strong class="performance-value">
+                            37 vendas
+                        </strong>
+
+
+                        <div class="performance-bar">
+
+                            <span style="width: 72%;"></span>
+
+                        </div>
+
+
+                        <span class="performance-footer">
+                            Alta demanda comercial
+                        </span>
+
+                    </article>
+
+
+                    <!-- MACAN -->
+
+                    <article class="performance-card">
+
+                        <div class="performance-card-top">
+
+                            <span class="performance-rank">
+                                04
+                            </span>
+
+
+                            <span class="performance-trend negative">
+
+                                <i class="fa-solid fa-arrow-down"></i>
+
+                                2,1%
+
+                            </span>
+
+                        </div>
+
+
+                        <div class="performance-icon">
+
+                            <i class="fa-solid fa-gauge-high"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Porsche Macan
+                        </h3>
+
+
+                        <p>
+                            SUV esportivo
+                        </p>
+
+
+                        <strong class="performance-value">
+                            29 vendas
+                        </strong>
+
+
+                        <div class="performance-bar">
+
+                            <span style="width: 58%;"></span>
+
+                        </div>
+
+
+                        <span class="performance-footer">
+                            Necessita acompanhamento
+                        </span>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     INSIGHTS
+                ============================================== -->
+
+                <section class="insights-grid">
+
+
+                    <!-- INSIGHT PRINCIPAL -->
+
+                    <article class="insight-card insight-featured">
+
+                        <div class="insight-header">
+
+                            <div class="insight-icon">
+
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                            </div>
+
+
+                            <span>
+                                INSIGHT OPERACIONAL
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            O desempenho da linha elétrica está acelerando.
+                        </h2>
+
+
+                        <p>
+                            A procura pelos modelos elétricos apresentou
+                            crescimento consistente nas últimas semanas,
+                            com aumento nas solicitações de test drive e
+                            negociações iniciadas.
+                        </p>
+
+
+                        <div class="insight-data">
+
+                            <div>
+
+                                <strong>
+                                    +18,4%
+                                </strong>
+
+                                <span>
+                                    Interesse qualificado
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    +11,7%
+                                </strong>
+
+                                <span>
+                                    Test drives
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    32
+                                </strong>
+
+                                <span>
+                                    Novas oportunidades
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="button button-light">
+
+                            Explorar análise
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </article>
+
+
+                    <!-- ALERTAS -->
+
+                    <article class="dashboard-card alerts-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    PRIORIDADES
+                                </span>
+
+                                <h2>
+                                    Pontos de atenção
+                                </h2>
+
+                            </div>
+
+
+                            <span class="alert-count">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <div class="alert-list">
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-priority high"></div>
+
+
+                                <div>
+
+                                    <strong>
+                                        5 pedidos aguardando confirmação
+                                    </strong>
+
+                                    <span>
+                                        Revisar pendências comerciais
+                                    </span>
+
+                                </div>
+
+
+                                <button>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-priority medium"></div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Estoque do Macan em nível reduzido
+                                    </strong>
+
+                                    <span>
+                                        Avaliar novas solicitações
+                                    </span>
+
+                                </div>
+
+
+                                <button>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-priority low"></div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Meta de conversão abaixo do esperado
+                                    </strong>
+
+                                    <span>
+                                        Analisar origem dos leads
+                                    </span>
+
+                                </div>
+
+
+                                <button>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     RESUMO DE CLIENTES
+                ============================================== -->
+
+                <section class="section-header">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            RELACIONAMENTO
+                        </span>
+
+                        <h2>
+                            Visão da base de clientes
+                        </h2>
+
+                    </div>
+
+                </section>
+
+
+                <section class="customer-summary-grid">
+
+
+                    <article class="customer-summary-card">
+
+                        <div class="customer-summary-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Clientes ativos
+                            </span>
+
+                            <strong>
+                                2.846
+                            </strong>
+
+                            <small class="positive">
+                                +124 neste mês
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="customer-summary-card">
+
+                        <div class="customer-summary-icon">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Novos clientes
+                            </span>
+
+                            <strong>
+                                186
+                            </strong>
+
+                            <small class="positive">
+                                +16,2% de crescimento
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="customer-summary-card">
+
+                        <div class="customer-summary-icon">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Satisfação média
+                            </span>
+
+                            <strong>
+                                4,9/5
+                            </strong>
+
+                            <small>
+                                Baseado em 624 avaliações
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="customer-summary-card">
+
+                        <div class="customer-summary-icon">
+
+                            <i class="fa-solid fa-rotate"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Clientes recorrentes
+                            </span>
+
+                            <strong>
+                                68%
+                            </strong>
+
+                            <small>
+                                Taxa de retorno anual
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =============================================
+                     FOOTER
+                ============================================== -->
+
+                <footer class="dashboard-footer">
+
+                    <div>
+
+                        <strong>
+                            PORSCHE PERFORMANCE CENTER
+                        </strong>
+
+                        <span>
+                            Sistema de gestão e inteligência operacional
+                        </span>
+
+                    </div>
+
+
+                    <div class="footer-status">
+
+                        <span class="footer-status-dot"></span>
+
+                        Última sincronização: agora
+
+                    </div>
+
+
+                    <div class="footer-links">
+
+                        <a href="#">
+                            Suporte
+                        </a>
+
+                        <a href="#">
+                            Privacidade
+                        </a>
+
+                        <a href="#">
+                            Sistema v1.0
+                        </a>
+
+                    </div>
+
+                </footer>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================================
+         MODAL: NOVO VEÍCULO
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="vehicleModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+        >
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="card-eyebrow">
+                        NOVO REGISTRO
+                    </span>
+
+                    <h2>
+                        Adicionar veículo
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    id="closeVehicleModal"
+                    aria-label="Fechar"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <form
+                class="vehicle-form"
+                id="vehicleForm"
+            >
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="vehicleModel">
+                            Modelo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="vehicleModel"
+                            placeholder="Ex: 911 Carrera"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="vehicleYear">
+                            Ano
+                        </label>
+
+                        <input
+                            type="number"
+                            id="vehicleYear"
+                            placeholder="2026"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="vehicleCategory">
+                            Categoria
+                        </label>
+
+                        <select id="vehicleCategory">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Esportivo
+                            </option>
+
+                            <option>
+                                SUV
+                            </option>
+
+                            <option>
+                                Elétrico
+                            </option>
+
+                            <option>
+                                Híbrido
+                            </option>
+
+                            <option>
+                                Executivo
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="vehiclePrice">
+                            Preço
+                        </label>
+
+                        <input
+                            type="text"
+                            id="vehiclePrice"
+                            placeholder="R$ 0,00"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group full-width">
+
+                    <label for="vehicleNotes">
+                        Observações
+                    </label>
+
+                    <textarea
+                        id="vehicleNotes"
+                        rows="5"
+                        placeholder="Informações adicionais sobre o veículo..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="button button-secondary"
+                        id="cancelVehicleModal"
+                    >
+
+                        Cancelar
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Adicionar veículo
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         PAINEL DE NOTIFICAÇÕES
+    ========================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel"
+    >
+
+        <div class="notification-panel-header">
+
+            <div>
+
+                <h3>
+                    Notificações
+                </h3>
+
+                <span>
+                    3 pendências importantes
+                </span>
+
+            </div>
+
+
+            <button id="markAllNotifications">
+
+                Marcar como lidas
+
+            </button>
+
+        </div>
+
+
+        <div class="notification-list">
+
+
+            <div class="notification-item unread">
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-car"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Novo veículo disponível
+                    </strong>
+
+                    <span>
+                        Taycan Turbo S foi adicionado ao estoque.
+                    </span>
+
+                    <small>
+                        Há 12 minutos
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item unread">
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Meta comercial atualizada
+                    </strong>
+
+                    <span>
+                        Você alcançou 78% da meta mensal.
+                    </span>
+
+                    <small>
+                        Há 38 minutos
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Pedido aguardando análise
+                    </strong>
+
+                    <span>
+                        Existem pedidos pendentes de confirmação.
+                    </span>
+
+                    <small>
+                        Há 1 hora
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Performance atualizada
+                    </strong>
+
+                    <span>
+                        Novos dados comerciais foram sincronizados.
+                    </span>
+
+                    <small>
+                        Há 2 horas
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button class="notification-footer">
+
+            Ver todas as notificações
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================================================
+         PAINEL DE PERFIL
+    ========================================================== -->
+
+    <div
+        class="profile-panel"
+        id="profilePanel"
+    >
+
+        <div class="profile-panel-header">
+
+            <div class="profile-panel-avatar">
+                LP
+            </div>
+
+            <div>
+
+                <strong>
+                    Lucas Padroni
+                </strong>
+
+                <span>
+                    Administrador do Sistema
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-panel-menu">
+
+            <button>
+
+                <i class="fa-regular fa-user"></i>
+
+                Meu perfil
+
+            </button>
+
+            <button>
+
+                <i class="fa-solid fa-sliders"></i>
+
+                Preferências
+
+            </button>
+
+            <button>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Segurança
+
+            </button>
+
+            <button class="logout-button">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                Encerrar sessão
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         PAINEL DE PESQUISA
+    ========================================================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+    >
+
+        <div class="search-modal">
+
+            <div class="search-modal-header">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="advancedSearch"
+                    placeholder="Digite para pesquisar no sistema..."
+                >
+
+                <kbd>
+                    ESC
+                </kbd>
+
+            </div>
+
+
+            <div class="search-results">
+
+                <span class="search-category">
+                    ACESSO RÁPIDO
+                </span>
+
+
+                <button class="search-result-item">
+
+                    <i class="fa-solid fa-car"></i>
+
+                    <div>
+
+                        <strong>
+                            Veículos
+                        </strong>
+
+                        <span>
+                            Gerenciar estoque e modelos
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <button class="search-result-item">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <div>
+
+                        <strong>
+                            Clientes
+                        </strong>
+
+                        <span>
+                            Consultar base de clientes
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+                <button class="search-result-item">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <div>
+
+                        <strong>
+                            Vendas
+                        </strong>
+
+                        <span>
+                            Visualizar operações comerciais
+                        </span>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         TOAST CONTAINER
+    ========================================================== -->
+
+    <div
+        class="toast-container"
+        id="toastContainer"
+    ></div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
